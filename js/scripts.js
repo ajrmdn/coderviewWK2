@@ -7,6 +7,11 @@ $(document).ready(function(){
     var userCode = $("#question5").val();
     event.preventDefault();
 
+    if (userFavAnimal === "Dogs" && userFavColor === "Orange" && userFavFood === "Fruits" && userFavClams === red && userCode === "Yes") {
+      $(".ruby").show();
+
+    }
 
 
+  });
 });
