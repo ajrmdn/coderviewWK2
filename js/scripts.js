@@ -8,7 +8,6 @@ $(document).ready(function(){
     event.preventDefault();
 
 
-
     if (userFavAnimal === "Dogs" && userFavColor === "Orange" && userFavFood === "Fruits" && userFavClams === "Red" && userCode === "Yes") {
       $(".ruby").show();
     } else if(userFavAnimal === "Cats" && userFavColor === "Purple" && userFavFood === "Veggies" && userFavClams === "White" && userCode === "No") {
