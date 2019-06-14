@@ -2,16 +2,74 @@
   display: none;
 }
 
-.container {
-  width: 350px;
-  background-color: #F4D03F;
-  border-radius: 5%;
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #fdfff0;
+}
+.scene {
+  width: 500px;
+  margin: 3rem;
 }
 
-button {
-  margin: 25px;
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.mountains {
+  fill: #463501;
+}
+
+.cloud, .cloud1, .cloud2, .cloud3 {
+  transform: translateZ(0);
+  transform-origin: 50%;
+  opacity: 0.8;
+}
+
+.cloud {
+  fill: #f8e1ff;
+}
+
+.cloud1 {
+  fill: #d7e1fe;
+}
+
+.cloud2 {
+  fill: #d7fcfe;
+}
+
+.cloud3 {
+  fill: #fed7d7;
+}
+
+.cloud {
+  transform: translateX(105px);
+  animation: cloud--track 15s 1s infinite linear;
+}
+
+.cloud1 {
+  animation: cloud--track 30s infinite linear;
+}
+
+.cloud2 {
+  animation: cloud--track 40s infinite linear;
+}
+
+.cloud3 {
+  transform: translateX(105px);
+  animation: cloud--track 35s 5s infinite linear;
+}
+
+.sun {
+  fill: #fde59b;
+  animation: sun--orbit 15s infinite linear;
+  transform-origin: 48% 50%;
+}
+
+@keyframes sun--orbit {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cloud--track {
+  0% { transform: translateX(105px); }
+  50% {transform: translateX(0px);}
+  100% {transform: translateX(-105px);}
 }
