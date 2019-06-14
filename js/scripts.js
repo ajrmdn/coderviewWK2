@@ -9,10 +9,16 @@ $(document).ready(function(){
 
 
     if (userFavAnimal === "Dogs" && userFavColor === "Orange" && userFavFood === "Fruits" && userFavClams === "Red" && userCode === "Yes") {
+      $(".react").hide();
+      $(".java").hide();
       $(".ruby").show();
     } else if(userFavAnimal === "Cats" && userFavColor === "Purple" && userFavFood === "Veggies" && userFavClams === "White" && userCode === "No") {
+      $(".ruby").hide();
+      $(".react").hide();
       $(".java").show();
     } else if(userFavAnimal === "Birds" && userFavColor === "Red" && userFavFood === "Carbs" && userFavClams === "None" && userCode === "Maybe") {
+      $(".java").hide();
+      $(".Ruby").hide();
       $(".react").show();
     }
   });
